@@ -7,6 +7,9 @@ local TextButton_4 = Instance.new("TextButton")
 local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 local Jump22 = Instance.new("TextButton")
+local ex = Instance.new("TextButton")
+local ex2 = Instance.new("TextButton")
+local x1 = Frame.Visible
 --Properties:
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -32,6 +35,24 @@ Jump22.Font = Enum.Font.SourceSans
 Jump22.Text = "Active jump"
 Jump22.TextColor3 = Color3.new(0, 0, 0)
 Jump22.TextSize = 14
+
+ex.Parent = ScreenGui
+ex.BackgroundColor3 = Color3.new(103, 17, 17)
+ex.Position = UDim2.new(0.429, 0,0.906, 0)
+ex.Size = UDim2.new(0, 88,0, 34)
+ex.Font = Enum.Font.SourceSans
+ex.Text = "Hide"
+ex.TextColor3 = Color3.new(0, 0, 0)
+ex.TextSize = 16
+
+ex2.Parent = ScreenGui
+ex2.BackgroundColor3 = Color3.new(103, 17, 17)
+ex2.Position = UDim2.new(0.429, 0,0.832, 0)
+ex2.Size = UDim2.new(0, 88,0, 34)
+ex2.Font = Enum.Font.SourceSans
+ex2.Text = "Show"
+ex2.TextColor3 = Color3.new(0, 0, 0)
+ex2.TextSize = 16
 
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.new(255, 255, 255)
@@ -190,3 +211,21 @@ function SCRIPT_BOOI79XX_FAKESCRIPT()
     end)
 end
 coroutine.resume(coroutine.create(SCRIPT_BOOI79XX_FAKESCRIPT))
+
+function xxxx22() 
+	local script = Instance.new('LocalScript')
+	script.Parent = ex
+	script.Parent.MouseButton1Click:Connect(function()
+        Frame.Visible = false
+    end)
+end
+coroutine.resume(coroutine.create(xxxx22))
+
+function xxxx2222() 
+	local script = Instance.new('LocalScript')
+	script.Parent = ex2
+	script.Parent.MouseButton1Click:Connect(function()
+        Frame.Visible = true
+    end)
+end
+coroutine.resume(coroutine.create(xxxx2222))
