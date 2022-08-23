@@ -11,14 +11,14 @@ local Jump22 = Instance.new("TextButton")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.0, 0.0, 0.10)
-Frame.Position = UDim2.new(0.105, 0, 0.182, 0)
-Frame.Size = UDim2.new(0, 553, 0, 421)
+Frame.BackgroundColor3 = Color3.new(0.0, 0.0, 0.15)
+Frame.Position = UDim2.new(0.198, 0,0.5, 0)
+Frame.Size = UDim2.new(0, 514,0, 436)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton.Position = UDim2.new(0, 0, 0.237, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Position = UDim2.new(0.023, 0,0.034, 0)
+TextButton.Size = UDim2.new(0, 235,0, 79)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Active steps"
 TextButton.TextColor3 = Color3.new(0, 0, 0)
@@ -26,8 +26,8 @@ TextButton.TextSize = 14
 
 Jump22.Parent = Frame
 Jump22.BackgroundColor3 = Color3.new(103, 17, 17)
-Jump22.Position = UDim2.new(0.32, 0, 0.836, 0)
-Jump22.Size = UDim2.new(0, 200, 0, 50)
+Jump22.Position = UDim2.new(0.265, 0,0.823, 0)
+Jump22.Size = UDim2.new(0, 235,0, 65)
 Jump22.Font = Enum.Font.SourceSans
 Jump22.Text = "Active jump"
 Jump22.TextColor3 = Color3.new(0, 0, 0)
@@ -35,8 +35,8 @@ Jump22.TextSize = 14
 
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton_2.Position = UDim2.new(0.638, 0, 0.237, 0)
-TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Position = UDim2.new(0.509, 0,0.034, 0)
+TextButton_2.Size = UDim2.new(0, 235,0, 79)
 TextButton_2.Font = Enum.Font.SourceSans
 TextButton_2.Text = "Unative steps"
 TextButton_2.TextColor3 = Color3.new(0, 0, 0)
@@ -44,8 +44,8 @@ TextButton_2.TextSize = 14
 
 TextButton_3.Parent = Frame
 TextButton_3.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton_3.Position = UDim2.new(0, 0, 0.461, 0)
-TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Position = UDim2.new(0.023, 0,0.312, 0)
+TextButton_3.Size = UDim2.new(0, 235,0, 79)
 TextButton_3.Font = Enum.Font.SourceSans
 TextButton_3.Text = "Active gems"
 TextButton_3.TextColor3 = Color3.new(0, 0, 0)
@@ -53,8 +53,8 @@ TextButton_3.TextSize = 14
 
 TextButton_4.Parent = Frame
 TextButton_4.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton_4.Position = UDim2.new(0.638, 0, 0.461, 0)
-TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Position = UDim2.new(0.509, 0,0.312, 0)
+TextButton_4.Size = UDim2.new(0, 235,0, 79)
 TextButton_4.Font = Enum.Font.SourceSans
 TextButton_4.Text = "Unative gems"
 TextButton_4.TextColor3 = Color3.new(0, 0, 0)
@@ -62,8 +62,8 @@ TextButton_4.TextSize = 14
 
 TextButton_5.Parent = Frame
 TextButton_5.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton_5.Position = UDim2.new(0, 0, 0.675, 0)
-TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Position = UDim2.new(0.023, 0,0.59, 0)
+TextButton_5.Size = UDim2.new(0, 235,0, 79)
 TextButton_5.Font = Enum.Font.SourceSans
 TextButton_5.Text = "Active EXP"
 TextButton_5.TextColor3 = Color3.new(0, 0, 0)
@@ -71,8 +71,8 @@ TextButton_5.TextSize = 14
 
 TextButton_6.Parent = Frame
 TextButton_6.BackgroundColor3 = Color3.new(255, 255, 255)
-TextButton_6.Position = UDim2.new(0.638, 0, 0.675, 0)
-TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Position = UDim2.new(0.509, 0,0.59, 0)
+TextButton_6.Size = UDim2.new(0, 235,0, 79)
 TextButton_6.Font = Enum.Font.SourceSans
 TextButton_6.Text = "Unactive EXP"
 TextButton_6.TextColor3 = Color3.new(0, 0, 0)
@@ -185,8 +185,7 @@ function SCRIPT_BOOI79XX_FAKESCRIPT()
 	local script = Instance.new('LocalScript')
 	script.Parent = Jump22
 	script.Parent.MouseButton1Click:Connect(function()
-		local player = game:GetService('Players').LocalPlayer
-		wait(5)
-		player.Character.Humanoid.JumpPower = 100
+	local player = game:GetService('Players').LocalPlayer
+	player.Character.Humanoid.JumpPower = 100
     end)
 end
