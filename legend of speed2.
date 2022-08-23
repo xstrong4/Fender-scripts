@@ -191,5 +191,5 @@ function SCRIPT_BOOI79XX_FAKESCRIPT()
 				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 			end
 		end)
-    
+    	end)
 end
