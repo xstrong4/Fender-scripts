@@ -24,7 +24,7 @@ TextButton.Text = "Active steps"
 TextButton.TextColor3 = Color3.new(0, 0, 0)
 TextButton.TextSize = 14
 
-Jump22.Parent = ScreenGui
+Jump22.Parent = Frame
 Jump22.BackgroundColor3 = Color3.new(103, 17, 17)
 Jump22.Position = UDim2.new(0.32, 0, 0.836, 0)
 Jump22.Size = UDim2.new(0, 200, 0, 50)
@@ -185,11 +185,8 @@ function SCRIPT_BOOI79XX_FAKESCRIPT()
 	local script = Instance.new('LocalScript')
 	script.Parent = Jump22
 	script.Parent.MouseButton1Click:Connect(function()
-		check = true
-		game:GetService("UserInputService").JumpRequest:connect(function()
-			if check then
-				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-			end
-		end)
+		  local player = game:GetService('Players').LocalPlayer
+		  wait(5)
+		  player.Character.Humanoid.JumpPower = 100
     	end)
 end
