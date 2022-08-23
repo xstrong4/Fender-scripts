@@ -43,7 +43,7 @@ end
 
 -- lEGENDS OF SPEED
 if game.PlaceId == 3101667897 then
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/legends%20of%20speed1'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/legend%20of%20speeed2x'),true))()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/jumping%20auto',true))() -- jumpingCode
 else
 print("WRONG GAME")
