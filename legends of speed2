@@ -181,11 +181,12 @@ function SCRIPT_BOOI79_FAKESCRIPT()
 
 end
 coroutine.resume(coroutine.create(SCRIPT_BOOI79_FAKESCRIPT))
+
 function SCRIPT_BOOI79XX_FAKESCRIPT() 
 	local script = Instance.new('LocalScript')
 	script.Parent = Jump22
 	script.Parent.MouseButton1Click:Connect(function()
-	local player = game:GetService('Players').LocalPlayer
-	player.Character.Humanoid.JumpPower = 100
+        game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower=100
     end)
 end
+coroutine.resume(coroutine.create(SCRIPT_BOOI79XX_FAKESCRIPT))
