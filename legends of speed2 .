@@ -11,7 +11,7 @@ local Jump22 = Instance.new("TextButton")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(40, 40, 40)
+Frame.BackgroundColor3 = Color3.new(0.0, 0.0, 0.10)
 Frame.Position = UDim2.new(0.105, 0, 0.182, 0)
 Frame.Size = UDim2.new(0, 553, 0, 421)
 
@@ -185,8 +185,8 @@ function SCRIPT_BOOI79XX_FAKESCRIPT()
 	local script = Instance.new('LocalScript')
 	script.Parent = Jump22
 	script.Parent.MouseButton1Click:Connect(function()
-		  local player = game:GetService('Players').LocalPlayer
-		  wait(5)
-		  player.Character.Humanoid.JumpPower = 100
-    	end)
+		local player = game:GetService('Players').LocalPlayer
+		wait(5)
+		player.Character.Humanoid.JumpPower = 100
+    end)
 end
