@@ -1,0 +1,65 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+--Properties:
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.0, 0.0, 0.15)
+Frame.Position = UDim2.new(0.844, 0,0.875, 0)
+Frame.Size = UDim2.new(0, 132,0, 82)
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
+TextButton.Position = UDim2.new(0.15, 0,0.141, 0)
+TextButton.Size = UDim2.new(0, 100,0, 28)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Infinite Jump"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 14
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.new(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.15, 0,0.568, 0)
+TextButton_2.Size = UDim2.new(0, 100,0, 28)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Auto Win Farm"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextSize = 14
+
+-- Scripts:
+
+function x1()
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton
+	script.Parent.MouseButton1Click:Connect(function()	
+		check = true
+		game:GetService("UserInputService").JumpRequest:Connect(function()
+			if check then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end)
+end
+coroutine.resume(coroutine.create(x1))
+
+function xxxx22() 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton_2
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31, 58093, -511283)
+		wait(0)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-18, 58093, -207937)
+		wait(0)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-133, 58093, -972326)
+		wait(0)
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		wait(1.2)
+		end
+    end)
+end
+coroutine.resume(coroutine.create(xxxx22))
+
