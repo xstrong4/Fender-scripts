@@ -7,3 +7,10 @@ print("Pos X " .. hmndrootpart.Position.X)
 print("Pos Y " .. hmndrootpart.Position.Y)
 print("Pos Z " .. hmndrootpart.Position.Z)
 print('=========================')
+
+
+
+-- Legends of Speed - Desert Race
+-- 2034
+-- 27
+-- 17957
