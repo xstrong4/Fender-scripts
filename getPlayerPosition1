@@ -1,0 +1,9 @@
+local player = game:GetService("Players").LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local hmndrootpart = character:WaitForChild('HumanoidRootPart')
+
+print('=========================')
+print("Pos X " .. hmndrootpart.Position.X)
+print("Pos Y " .. hmndrootpart.Position.Y)
+print("Pos Z " .. hmndrootpart.Position.Z)
+print('=========================')
