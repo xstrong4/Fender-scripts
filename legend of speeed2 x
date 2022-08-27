@@ -181,9 +181,9 @@ function SCRIPT_PLAH83_FAKESCRIPT() -- TextButton_5.LocalScript
 	-- Event:FireServer(A_1, A_2, A_3)
 	-- wait()
 	-- end
-	local x=2034
-	local y=27
-	local z=17957
+	local x=2506
+	local y=15
+	local z=4356
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 	end)
 
@@ -202,9 +202,9 @@ function SCRIPT_BOOI79_FAKESCRIPT()
 --	Event:FireServer(A_1, A_2, A_3)
 --	wait()
 --	end
-	local x=2506
-	local y=15
-	local z=4356
+	local x=2034
+	local y=27
+	local z=17957
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 	end)
 
