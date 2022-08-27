@@ -41,9 +41,9 @@ end
 -- print("WRONG GAME")
 -- end
 
--- lEGENDS OF SPEED
-if game.PlaceId == 3101667897 then
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/legend%20of%20speeed2x'),true))()
+-- LEGENDS OF SPEED
+if game.PlaceId == 3101667897 or game.PlaceId == 3276265788 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/legend%20of%20speeed2%20x'),true))()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/jumping%20auto',true))() -- jumpingCode
 else
 print("WRONG GAME")
@@ -92,7 +92,7 @@ end
 
 -- VICTORY RACE
 if game.PlaceId == 4951858512 then 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/Victory%20Race%20Obfuscated.exe"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/Victory%20Race%20GUI"))()
 else
 print("WRONG GAME")
 end
@@ -109,4 +109,25 @@ if game.PlaceId == 6677985923 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Millionaire-Tycoon"))()
 else
 print("WRONG GAME")
+end
+
+-- LIFE IN PRISON
+if game.PlaceId == 155615604 then
+	loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/scripts/main/lifeinprison.lua')()
+else
+print('WRONG GAME')
+end
+
+--  Sonic Speed Simulator
+if game.PlaceId == 9049840490 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+else
+print('WRONG GAME')
+end
+
+--  Blox Hunt
+if game.PlaceId == 70005410 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xSTronG30/Fender-scripts/main/bloxhuntX1", true))()
+else
+print('WRONG GAME')
 end
