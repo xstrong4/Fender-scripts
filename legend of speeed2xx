@@ -86,7 +86,7 @@ TextButton_5.BackgroundColor3 = Color3.new(255, 255, 255)
 TextButton_5.Position = UDim2.new(0.023, 0,0.59, 0)
 TextButton_5.Size = UDim2.new(0, 235,0, 79)
 TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "Active EXP"
+TextButton_5.Text = "Teleport To Desert"
 TextButton_5.TextColor3 = Color3.new(0, 0, 0)
 TextButton_5.TextSize = 14
 
@@ -95,7 +95,7 @@ TextButton_6.BackgroundColor3 = Color3.new(255, 255, 255)
 TextButton_6.Position = UDim2.new(0.509, 0,0.59, 0)
 TextButton_6.Size = UDim2.new(0, 235,0, 79)
 TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Unactive EXP"
+TextButton_6.Text = "Race Win ( Desert World )"
 TextButton_6.TextColor3 = Color3.new(0, 0, 0)
 TextButton_6.TextSize = 14
 
@@ -172,15 +172,19 @@ function SCRIPT_PLAH83_FAKESCRIPT() -- TextButton_5.LocalScript
 	local script = Instance.new('LocalScript')
 	script.Parent = TextButton_5
 	script.Parent.MouseButton1Click:Connect(function()
-		_G.EXPFarm = true
-	while _G.EXPFarm == true do 
-	local A_1 = "collectOrb"
-	local A_2 = "Yellow Orb"
-	local A_3 = "City"
-	local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
-	Event:FireServer(A_1, A_2, A_3)
-	wait()
-	end
+		-- _G.EXPFarm = true
+	-- while _G.EXPFarm == true do 
+	-- local A_1 = "collectOrb"
+	-- local A_2 = "Yellow Orb"
+	-- local A_3 = "City"
+	-- local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
+	-- Event:FireServer(A_1, A_2, A_3)
+	-- wait()
+	-- end
+	local x=2034
+	local y=27
+	local z=17957
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 	end)
 
 end
@@ -189,15 +193,19 @@ function SCRIPT_BOOI79_FAKESCRIPT()
 	local script = Instance.new('LocalScript')
 	script.Parent = TextButton_6
 	script.Parent.MouseButton1Click:Connect(function()
-		_G.EXPFarm = false
-	while _G.EXPFarm == true do 
-	local A_1 = "collectOrb"
-	local A_2 = "Yellow Orb"
-	local A_3 = "City"
-	local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
-	Event:FireServer(A_1, A_2, A_3)
-	wait()
-	end
+--		_G.EXPFarm = false
+--	while _G.EXPFarm == true do 
+--	local A_1 = "collectOrb"
+--	local A_2 = "Yellow Orb"
+--	local A_3 = "City"
+--	local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
+--	Event:FireServer(A_1, A_2, A_3)
+--	wait()
+--	end
+	local x=2506
+	local y=15
+	local z=4356
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 	end)
 
 end
