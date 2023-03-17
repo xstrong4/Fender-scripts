@@ -60,7 +60,7 @@
 	EspStatus.Size = UDim2.new(1, 0, 0.162, 0)
 	EspStatus.Font = Enum.Font.ArialBold
 	EspStatus.Text = "Press O to change team based mode"
-	EspStatus.TextColor3 = Color3.new(0.6, 0.196078, 0.8)
+	EspStatus.TextColor3 = Color3.new(255, 0, 0)
 	EspStatus.TextScaled = true
 	EspStatus.TextWrapped = true
 	 
@@ -84,8 +84,8 @@
 	st1_2.Position = UDim2.new(0, 0, 0.875999987, 0)
 	st1_2.Size = UDim2.new(0.999999881, 0, 0.161862016, 0)
 	st1_2.Font = Enum.Font.ArialBold
-	st1_2.Text = "Press E to lock on a person inside ur view"
-	st1_2.TextColor3 = Color3.new(0.6, 0.196078, 0.8)
+	st1_2.Text = "Press E to Aimbot"
+	st1_2.TextColor3 = Color3.new(255, 0, 0)
 	st1_2.TextScaled = true
 	st1_2.TextWrapped = true
 	 
@@ -96,8 +96,8 @@
 	st1_3.Position = UDim2.new(0, 0, 0.54, 0)
 	st1_3.Size = UDim2.new(1, 0, 0.261999995, 0)
 	st1_3.Font = Enum.Font.ArialBold
-	st1_3.Text = "Press L to enable esp loop and press T to update esp"
-	st1_3.TextColor3 = Color3.new(0.6, 0.196078, 0.8)
+	st1_3.Text = "Press L To start wallhack + T to update wallhack"
+	st1_3.TextColor3 = Color3.new(255, 0, 0)
 	st1_3.TextScaled = true
 	st1_3.TextWrapped = true
 	 
@@ -109,8 +109,8 @@
 	Name.Position = UDim2.new(0, 25, 20.9860001, 0)
 	Name.Size = UDim2.new(0.838, 0, 1.27999997, 0)
 	Name.Font = Enum.Font.Arcade
-	Name.Text = "ARSENAL GUI"
-	Name.TextColor3 = Color3.new(0.541176, 0.168627, 0.886275)
+	Name.Text = "Made by: xStrong"
+	Name.TextColor3 = Color3.new(255, 0, 0)
 	Name.TextScaled = true
 	Name.TextSize = 12
 	Name.TextWrapped = true
@@ -412,3 +412,30 @@
 		end
 	end)
 	warn("loaded")
+	
+	----------------------------
+	
+	local UIS = game:GetService("UserInputService")
+
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+
+
+function GetCharacter()
+   return game.Players.LocalPlayer.Character
+end
+
+function Teleport(pos)
+   local Char = GetCharacter()
+   if Char then
+       Char:MoveTo(pos)
+   end
+end
+
+
+UIS.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+       Teleport(Mouse.Hit.p)
+   end
+end)
+
